@@ -58,12 +58,6 @@ The script uses a fixed random seed so the same CSV is generated every time. Thi
 
 Contains the three dependencies: streamlit, anthropic, and pandas. No other packages are required.
 
-### `.gitignore`
-
-Excludes API keys, environment files, generated CSV files, and Python cache directories from version control.
-
----
-
 ## Supported Startup Types
 
 InstaTier ships with pre-configured ICP profiles for five categories. Selecting your type adjusts the scoring weights automatically so the same lead is evaluated differently depending on whether it is relevant to your product.
@@ -376,19 +370,6 @@ The scoring math runs locally in Python and has no API cost.
 
 ---
 
-## What This Replaces
-
-| Tool | Typical Cost | InstaTier Cost |
-|---|---|---|
-| Clearbit Enrichment | $99 to $999 per month | $0.005 per run |
-| ZoomInfo | $10,000 per year | $0.005 per run |
-| Clay.com | $149 to $800 per month | $0.005 per run |
-| Apollo.io enrichment tier | $99 per month | $0.005 per run |
-
-InstaTier does not have real-time company databases or phone number lookups. What it does cover is the core use case of firmographic inference and ICP scoring, which is the primary reason most small teams subscribe to enrichment tools in the first place.
-
----
-
 ## Limitations
 
 Claude infers firmographics from its training knowledge, not from a live database. Very new companies, recently rebranded companies, or highly niche businesses may receive a Low confidence rating. The enrichment is most accurate for well-known companies with recognizable domains.
@@ -422,7 +403,3 @@ The only sensitive value in this project is the Anthropic API key. It is read fr
 ## Author
 
 Built by Aakash Bhanushali
-
-Portfolio: aakashbhanushali20.wixsite.com/aakash-bhanushali
-
-LinkedIn: linkedin.com/in/aakash-bhanushali
